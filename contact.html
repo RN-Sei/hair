@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+	Student Name: RN
+	File Name: contact.html
+	Course: CST 231.01A
+-->
+<html lang="en">
+  <head>
+    <!-- Title-->
+    <title>Contact Us | Atelier Hair Salon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Atelier is a hair salon specializing in a hair types.">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <!--Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="tab-desk">
+      <h1>Atelier Hair Salon &#10022;</h1>
+    </header>
+
+    <!-- Mobile Nav -->  
+    <nav class="mobile-nav">
+      <div class="flex-container">
+        <h1 class="flex-item-left mobile-header">Atelier Hair Salon &#10022;</h1>
+        <a href="javascript:void(0);" class="icon flex-item-right" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="menu-links" class="flex-item-right">
+            <a href="index.html">Home</a>
+            <a href="stylists.html">Stylists</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Desktop Nav -->  
+    <nav class="tab-desk">
+        <ul>
+          <li><a href="/hair/index.html">Home</a></li> 
+          <li><a href="/hair/stylists.html">Stylists</a></li>
+          <li><a href="/hair/services.html">Services</a></li>
+          <li><a href="/hair/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main area and Content -->
+    <main>
+        <section id="contact">
+            <h2>Contact us today to schedule your appointment.</h2>
+            <p class="tel-link mobile"><a href="tel:336-555-1234">(336) 555-1234</a></p>
+            <p class="tab-desk">(814) 555-9228</p> 
+            <p>Email: <a class="email-link" href="mailto:info@ateliersalon.com">info@ateliersalon.com</a></p>
+        </section>
+        <section id="form">
+            <h2>Complete the form below and one of our staff members will contact you.</h2>
+            <form class="form-grid"><!-- Start Form -->
+              <div class="grid">
+                <fieldset>
+                    <legend>Client Information</legend>
+                    <label for="fName">First Name:</label>  <input type="text" name="fName" id="fName">
+                    <label for="lName">Last Name:</label>  <input type="text" name="lName" id="lName"> 
+                    <label for="email">Email:</label>  <input type="email" name="email" id="email">
+                    <label for="phone">Phone:</label>  <input type="tel" id="phone" name="phone">
+                  </fieldset>
+        
+                  <fieldset>
+                    <legend>Possible Availability:</legend>
+                    <p>Please check days you can have an appointment</p>
+                    <label for="mon"><input type="checkbox" name="day" id="mon" value="Monday">Monday</label>
+                    <label for="tues"><input type="checkbox" name="day" id="tues" value="Tuesday">Tuesday</label>
+                    <label for="wed"><input type="checkbox" name="day" id="wed" value="Wednesday">Wednesday</label>
+                    <label for="thurs"><input type="checkbox" name="day"  id="thurs" value="Thursday">Thursday</label>
+                    <label for="fri"><input type="checkbox" name="day" id="fri" value="Friday">Friday</label>
+                    <label for="sat"><input type="checkbox" name="day" id="sat" value="Saturday">Saturday</label>
+                    <label for="sun"><input type="checkbox" name="day" id="sun" value="Sunday">Sunday</label>
+                    <label for="subject">Anything else?</label>
+                    <textarea id="subject" name="subject" placeholder="Why are you making an appointment.."></textarea>
+                  </fieldset>
+              </div>
+
+    
+              <input type="submit" id="submit" value="Submit" class="btn round">
+            
+            </form>
+        </section>
+    </main>
+
+     <!-- Footer -->
+    <footer class="tab-flex-container">
+      <div class="copyright">
+        <p>&copy; Copyright 2023. All Rights Reserved.</p>
+        <p><a href="mailto:info@ateliersalon.com">info@ateliersalon.com</a></p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="white Facebook logo"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="white Twitter logo"></a> 
+      </div>
+    </footer>
+	<script src="scripts/script.js"></script>
+  </body>
+
+</html>
