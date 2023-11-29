@@ -132,6 +132,64 @@ nav li a {
     flex: 30%;
 }
 
+/*Style rules for Space between Nav and Main*/
+.round{
+    border-radius: 7px;
+ }
+
+ /* Style rules for hero image */
+ #hero{
+    display: block;
+ }
+.hero-image {
+    /*darken background 4 text readability */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/salon.jpeg");
+  
+    /* Set height */
+    height: 250px;
+  
+    /* Position and center the image*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    /*padding*/
+    padding-bottom: 10px;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .hero-btn{
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 1em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5%;
+    width: 250px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: .02em;
+    font-size: 2em;
+  }
+
+  .hero-h1{
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: .02em;
+    font-size: 3em;
+    padding-bottom: 10px;
+  }
+
+
 /* Style rules for main content */
 main {
     padding: 2%;
@@ -154,11 +212,10 @@ main a{
     text-decoration: none;
     font-weight: bold;
 }
-.round{
-    border-radius: 8px;
- }
 
-#info {
+ /* Style rules for Home content */
+ /*Style rules for intro*/
+ #info {
     clear: left;
     background-color: #302b63;
     padding: 1% 2%;
@@ -168,7 +225,6 @@ main a{
     margin-left: 10%;
  }
 
- /* Style rules for Home content */
 /* Style rules for video */
 video {
     max-width: 640px;
