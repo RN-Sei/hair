@@ -99,10 +99,6 @@ nav li a {
 }
 
 .mobile-nav a.menu-icon {
-    /*display: block;
-    position: absolute;
-    right: 0; 
-    top: 0; */
     position: relative;
     float: right;
 }
@@ -131,6 +127,19 @@ nav li a {
 .flex-item-right {
     flex: 30%;
 }
+
+.email-link{
+    color: #e5e9fc;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tel-link{
+    color: #A38A00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 /*Style rules for Space between Nav and Main*/
 .round{
@@ -215,14 +224,13 @@ main a{
 
  /* Style rules for Home content */
  /*Style rules for intro*/
- #info {
-    clear: left;
-    background-color: #302b63;
-    padding: 1% 2%;
+ #intro {
+    padding: 2% 4% 6% 4%;
+    text-align: center;
+    color: #000;
  }
-
- #info ul{
-    margin-left: 10%;
+ #intro h1{
+    font-style: italic;
  }
 
 /* Style rules for video */
@@ -234,6 +242,22 @@ video {
 
 /* Style rules for Stylists content */
 /* Style rule for photo intro text */
+.carousel .carousel-item {
+    height: 250px;
+  }
+.carousel-item img {
+
+    /* Position and center the image*/
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    top:50;
+   /* position: absolute;
+    object-fit: cover;
+    left: 0;*/
+    min-height: 250px;
+
+}
 #photos {
     text-align: center;
 }
@@ -291,9 +315,9 @@ ul{
 /* Style rules for Contact Us content */
 /* Style rules for contact and form */
 #contact, #form {
-    margin: 0 2%;
+    margin: 0;
     display: block;
-    text-align: center;
+    text-align: left;
     
 }
 #contact a, #form a{
@@ -302,7 +326,8 @@ ul{
     font-weight: bold;
 }
 #form h2 {
-    padding-bottom: 3px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 /* Style rules for form elements */
 fieldset, input {
@@ -325,9 +350,11 @@ form #submit {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  padding: 2%;
-  background-color: #b7b7e1;
+  padding: 1%;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #fff;
   font-size: 1em;
+  width: 150px;
 }
 
 /* Style rules for footer content */
@@ -417,11 +444,6 @@ footer p {
     fieldset {
         width: 80%;
     }
-    /* Tablet Viewport: Style rule for grid */
-    .grid{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
 
     /* Tablet Viewport: Style rules for Contact Us content */
     /* Tablet Viewport: Style rule for People grid */
@@ -498,6 +520,16 @@ footer p {
     nav li a:hover{
       color: #000;
       background-color: #e5e9fc;
+    }
+
+    /* Desktop Viewport: Style rules for intro content */
+    #intro p{
+        padding: 0 28% 0 28%;
+     }
+    /* Desktop Viewport: Style rule for grid */
+    .half-grid{
+        display: grid;
+        grid-template-columns: auto auto;  
     }
   /* Desktop Viewport: Style rule for grid */
   .ppl-grid{
